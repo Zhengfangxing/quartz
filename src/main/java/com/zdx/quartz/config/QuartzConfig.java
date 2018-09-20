@@ -40,7 +40,7 @@ public class QuartzConfig {
     public JobDetail jobOneDetail() {
         //Set Job data map
         JobDataMap jobDataMap = new JobDataMap();
-        jobDataMap.put("jobName", "demoJobOne");
+        jobDataMap.put("jobName", "job1");
         jobDataMap.put("jobLauncher", jobLauncher);
         jobDataMap.put("jobLocator", jobLocator);
 
@@ -55,7 +55,7 @@ public class QuartzConfig {
     public JobDetail jobTwoDetail() {
         //Set Job data map
         JobDataMap jobDataMap = new JobDataMap();
-        jobDataMap.put("jobName", "demoJobTwo");
+        jobDataMap.put("jobName", "job2");
         jobDataMap.put("jobLauncher", jobLauncher);
         jobDataMap.put("jobLocator", jobLocator);
 

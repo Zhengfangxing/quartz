@@ -12,10 +12,14 @@ import org.springframework.batch.repeat.RepeatStatus;
  */
 @Slf4j
 public class TaskTwo implements Tasklet {
+
     @Override
-    public RepeatStatus execute(StepContribution stepContribution, ChunkContext chunkContext) throws Exception {
-        log.info("MyTaskTwo start...");
-        log.info("MyTaskTwo done...");
+    public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
+        System.out.println("MyTaskTwo start..");
+
+        // ... your code
+
+        System.out.println("MyTaskTwo done..");
         return RepeatStatus.FINISHED;
     }
 }
